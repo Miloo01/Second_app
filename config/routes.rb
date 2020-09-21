@@ -4,5 +4,9 @@ Rails.application.routes.draw do
   get  "pages/about_us"
   get  "pages/test"
   
-  root "pages#index"
+  get  "pages/index"
+  root to: "pages#index" #seteo pagina
 end
+
+
+## <%= javascript_include_tag 'application' %> colocar bajo body en application
